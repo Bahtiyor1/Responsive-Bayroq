@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202C36;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2B3844;
+    box-shadow: 0px 2px 4px 0px #0000000E;
+    height: 80px;
+    color: white;
+    padding: 0 80px;
+}
+
+.left_n > h1 {
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.74px; 
+    padding-top: 23px;
+}
+
+.right_n > p {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.82px;    
+    padding-top: 29px;
+}
+
+
+.search {
+    display: flex;
+    position: relative;
+}
+
+.search > .se10 {
+    position: absolute;
+    left: 110px;
+    top: 67px;
+}
+
+.search > input {
+    width: 480px;
+    height: 56px;
+    background-color: #2B3844;
+    border: none;
+    outline: none;
+    margin: 48px 0 0 80px;
+    padding: 0 0 0 78px;
+    color: white;
+}
+
+.search > input::placeholder {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;    
+}
+
+.wrapper {
+    padding: 48px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.Card > img {
+    width: 264px;
+    height: 160px;
+}
+
+.Card {
+    background-color: #2B3844;
+    width: 264px;
+    height: 250px;
+}
+
+.Card > p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 32px;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    color: white;    
+    text-align: center;
+}
+
+
+@media (max-width:834px) {
+    .navbar {
+        padding: 0 32px 0 34px;
+    }
+
+    .left_n > p{
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24.55px;
+    }
+    .right_n {
+        font-family: Nunito Sans;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24.55px;        
+    }
+    .search {
+        margin: 0;
+    }
+
+    .search > input {
+        width: 768px;
+        height: 101px;
+        margin: 48px 0 0 34px;
+    }
+
+    .search > .se10 {
+        left: 55px;
+        width: 40px;
+        height: 40px;
+        top: 78px;
+    }
+
+    .wrapper {
+        padding: 48px 32px 0 34px;
+    }
+}
+
+@media (max-width:375px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        padding: 0 16px;
+    }
+
+    .wrapper {
+        padding: 120px 0 0 0;
+    }
+    
+
+    .left_n > h1 {
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 20px;        
+    }
+
+    .right_n > p{
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16.37px;        
+    }
+
+
+    .search > input {
+        width: 343px;
+        height: 48px;
+        margin: 24px 0 0 16px;
+    }
+
+    .search > .se10 {
+        width: 16px;
+        height: 16px;
+        top: 40px;
+        left: 46px;
+    }
+}
